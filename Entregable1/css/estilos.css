@@ -1,0 +1,118 @@
+body {
+    background-color: #f0f3fa;
+
+}
+
+header {
+    border-bottom: 2px solid #2d2e36;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 2px;
+}
+
+/*INICIO*/
+.titulo h2 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.titulo p {
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fotos-inicio img {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+    border: 1px solid #395886;
+
+}
+
+iframe {
+    height: 350px;
+    width: 400px;
+    padding: 5px;
+}
+.logo_header {
+    border-radius: 15%;
+    height: 80px;
+    width: 80px;
+}
+
+.parrafos-clientes {
+    text-align: center;
+    justify-content: center;
+}
+
+.parrafos-clientes p {
+    border: 1px solid #2d2e36;
+}
+.container .container-photos img {
+    width: 200px;
+    height: 150px;
+    flex-wrap: wrap;
+}
+
+.fotos-inicio img {
+    width: 280px;
+    height: 250px;
+}
+
+.menu_page a {
+    background-color: #d5deef;
+    color: #395886;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+span {
+    color: #e9c46a;
+}
+
+/*NOSORTROS*/ 
+
+.somos h2 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.somos h3 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: #d5deef;
+    color: #395886;
+}
+
+.somos p {
+    text-align: center;
+    justify-content: center;
+    padding: 10px 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1.5px solid #8aaee0;
+    border-radius: 10px;
+}
