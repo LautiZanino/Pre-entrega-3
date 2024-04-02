@@ -50,6 +50,19 @@ body {
     align-items: center;
 }
 
+/*INICIO*/
+header nav ul a {
+    color: rgb(215, 215, 215) !important;
+    background-color: #202020 !important;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+header nav ul a:hover {
+        background-color: white !important;
+        color: #1a1a1a !important;
+}
+
 
 /*NOSORTROS*/ 
 .textos-somos h2 {
