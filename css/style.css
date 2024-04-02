@@ -63,6 +63,12 @@ header nav ul a:hover {
         color: #1a1a1a !important;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 25px;
+}
 
 /*NOSORTROS*/ 
 .textos-somos h2 {
