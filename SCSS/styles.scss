@@ -1,34 +1,11 @@
-body {
-    background-color: #1a1a1a;
-}
-
-.color-white {
-    color: white;
-}
-
-.color-black {
-    color: black;
-}
-
-.color-combination {
-    color: rgb(215, 215, 215);
-}
-
-.background-color-nav {
-    background-color: #1a1a1a;
-}
-
-.background-color-section {
-    background-color: #202020;
-}
-
-.font-family-arial {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.color-body-card {
-    background-color: rgb(93, 92, 92);
-}
+$body: #1a1a1a;
+$color-white: white;
+$color-black: black;
+$color-combination: rgb(215, 215, 215);
+$background-color-nav: #1a1a1a;
+$background-color-section: #202020;
+$font-family-arial: Arial, Helvetica, sans-serif;
+$color-body-card: rgb(93, 92, 92);
 
 .logo-zaam {
     width: 100px;
@@ -51,7 +28,6 @@ body {
 }
 
 /*INICIO*/
-
 header {
 
     nav {
@@ -63,14 +39,14 @@ header {
 
     ul {
         a {
-            color: rgb(215, 215, 215) !important;
-            background-color: #202020 !important;
+            color: $color-combination !important;
+            background-color: $background-color-section !important;
             border-radius: 5px;
             margin: 10px;
         }
 
         &:hover{
-            background-color: white !important;
+            background-color: $color-white !important;
             color: #1a1a1a !important;
         }
     }
@@ -82,10 +58,10 @@ header {
     justify-content: center;
 
     p {
-        color: white;
+        color: $color-white;
         text-align: center;
         justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $font-family-arial;
         padding: 10px 15px;
         border: 1.5px solid #2d2e36;
         border-radius: 10px;
@@ -93,11 +69,11 @@ header {
     }
 
     h2 {
-        color: white;
+        color: $color-white;
         text-align: center;
         justify-content: center;
         padding-top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $font-family-arial;
         font-weight: bold;
         margin: 25px;
     }
@@ -108,14 +84,14 @@ header {
     grid-template-columns: 1fr 1fr;
 
     h3 {
-        color: white;
-        background-color: #202020;
+        color: $color-white;
+        background-color: $background-color-section;
     }
 }
 
 
 .texto-historia {
-    border: 1px solid white;
+    border: 1px solid $color-white;
     margin-right: 8px;
 
     p{
@@ -130,7 +106,7 @@ header {
 
 
 .texto-buscamos {
-    border: 1px solid white;
+    border: 1px solid $color-white;
     margin-left: 10px;
 
     p{
@@ -147,28 +123,28 @@ header {
     width: 250px;
     height: 280px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid $color-white;
 }
 
 .image2 {
     width: 250px;
     height: 280px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid $color-white;
 }
 
 .image3 {
     width: 250px;
     height: 280px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid $color-white;
 }
 
 .image4 {
     width: 760px;
     height: 280px;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid $color-white;
 }
 
 .grid-container {
@@ -197,7 +173,7 @@ header {
         display: flex;
         width: 290px;
         height: 290px;
-        border: 1.5px solid white;
+        border: 1.5px solid $color-white;
         border-radius: 10px;
     }
 
@@ -207,26 +183,25 @@ header {
 }
 
 .container h2 {
-    color: white;
+    color: $color-white;
     text-align: center;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', $font-family-arial;
     font-size: x-large;
     padding-top: 35px;
     font-weight: bold;
-    color: white ;
-    text-shadow: 3px -1px 2px black;
+    text-shadow: 3px -1px 2px $color-black;
 }
 
 .titulo-trabajos h2 {
-    color: white;
+    color: $color-white;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', $font-family-arial;
     padding: 10px;
 }
 
 .preguntas {
-    color: white;
+    color: $color-white;
     display: flex;
     justify-content: space-around;
     padding: 30px;
@@ -235,7 +210,7 @@ header {
 }
 
 .parrafo-tiempos-entrega {
-    border: 1px solid white;
+    border: 1px solid $color-white;
     padding: 15px;
 }
 
@@ -255,20 +230,20 @@ header {
 .textos {
     justify-content: space-between;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-family-arial;
     margin: 50px;
     width: 60%;
     height: 100%;
 
     p {
-        color: white;
+        color: $color-white;
         border: 1px solid #395886;
         border-radius: 10px;
         padding: 40px;
     }
 
     h3 {
-        color: white;
+        color: $color-white;
         padding: 12px;
         margin: 15px;
     }
@@ -276,7 +251,7 @@ header {
 
 
 .formulario {
-    border: 2px solid black;
+    border: 2px solid $color-black;
     padding: 20px;
     margin: 50px;
     width: 40%;
@@ -287,7 +262,7 @@ header {
 }
 
 .botton input {
-    color: white;
+    color: $color-white;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -302,7 +277,7 @@ header {
 
 /*CLIENTES*/
 .titulo-clientes h1 {
-    color: white;
+    color: $color-white;
     text-align: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
@@ -324,7 +299,7 @@ header {
 }
 
 .parrafos-clientes p {
-    color: white;
+    color: $color-white;
     text-align: center;
     justify-content: center;
     font-size: large;
@@ -332,18 +307,18 @@ header {
     height: auto;
     padding: 30px;
     margin: auto;
-    border:1px solid white;
+    border:1px solid $color-white;
     border-radius: 10px;
 }
 
 label {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-family-arial;
     font-weight: bold;
 }
 
 
 span {
-    color: rgb(230, 230, 230);
+    color: $color-combination;
     font-weight: bold;
 }
 
