@@ -1,0 +1,48 @@
+/*TRABAJOS*/
+.container-photos {
+    display: flex;
+
+    img {
+        @include sizes (290px, 290px);
+        margin: auto;
+        display: flex;
+        border: 1.5px solid $color-white;
+        border-radius: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.009);
+    }
+}
+
+.container h2 {
+    color: $color-white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', $font-family-arial;
+    font-size: x-large;
+    padding-top: 35px;
+    font-weight: bold;
+    text-shadow: 3px -1px 2px $color-black;
+}
+
+.titulo-trabajos h2 {
+    color: $color-white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', $font-family-arial;
+    padding: 10px;
+}
+
+.preguntas {
+    color: $color-white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin: auto;
+    gap: 30px;
+}
+
+.parrafo-tiempos-entrega {
+    border: 1px solid $color-white;
+    padding: 15px;
+}

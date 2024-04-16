@@ -1,0 +1,33 @@
+/*CLIENTES*/
+.titulo-clientes h1 {
+    color: $color-white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    padding-top: 20px;
+}
+
+.contenedores-clientes .cliente {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.cliente img {
+    @include sizes(250px,300px);
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.parrafos-clientes p {
+    @include sizes(auto,auto);
+    color: $color-white;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    padding: 30px;
+    margin: auto;
+    border:1px solid $color-white;
+    border-radius: 10px;
+}

@@ -1,0 +1,57 @@
+/*CONTACTO*/
+.contenedor1 {
+    @extend .contenedor2;
+    border-bottom: 2px solid #2d2e36;
+    height: 50%;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+}
+
+.textos {
+    @include sizes(60%,100%);
+    justify-content: space-between;
+    text-align: center;
+    font-family: $font-family-arial;
+    margin: 50px;
+
+    p {
+        color: $color-white;
+        border: 1px solid #395886;
+        border-radius: 10px;
+        padding: 40px;
+    }
+
+    h3 {
+        color: $color-white;
+        padding: 12px;
+        margin: 15px;
+    }
+}
+
+
+.formulario {
+    @include sizes(40%,100%);
+    border: 2px solid $color-black;
+    padding: 20px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.botton input {
+    color: $color-white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    padding: 10px;
+}
+
+.horarios {
+    justify-content: center;
+    text-align: center;
+}

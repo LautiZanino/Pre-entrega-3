@@ -1,0 +1,103 @@
+/*NOSOTROS*/
+.textos-somos {
+    text-align: center;
+    justify-content: center;
+
+    p {
+        text-align: center;
+        justify-content: center;
+        color: $color-white;
+        font-family: $font-family-arial;
+        padding: 10px 15px;
+        border: 1.5px solid #2d2e36;
+        border-radius: 10px;
+        margin: 20px 200px;
+    }
+
+    h2 {
+        text-align: center;
+        justify-content: center;
+        color: $color-white;
+        padding-top: 10px;
+        font-family: $font-family-arial;
+        font-weight: bold;
+        margin: 25px;
+    }
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+        color: $color-white;
+        background-color: $background-color-section;
+    }
+}
+
+
+.texto-historia {
+    border: 1px solid $color-white;
+    margin-right: 8px;
+
+    p{
+        padding: 20px;
+    }
+
+    h3{
+        padding: 8px;
+        text-align: center;
+    }
+}
+
+
+.texto-buscamos {
+    border: 1px solid $color-white;
+    margin-left: 10px;
+
+    p{
+        padding: 20px;
+    }
+
+    h3{
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.image1 {
+    @include sizes (250px, 280px);
+    border-radius: 5px;
+    border: 1px solid $color-white;
+}
+
+.image2 {
+    @extend .image1;
+}
+
+.image3 {
+    @extend .image1;
+}
+
+.image4 {
+    @include sizes (760px, 280px);
+    border-radius: 5px;
+    border: 1px solid $color-white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: auto;
+}
+
+.iframe-grid {
+    grid-column: 1/2;
+}
+
+.horarios-grid {
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+}
