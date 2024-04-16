@@ -1,3 +1,4 @@
+/*VARIABLES GLOBALES*/ 
 $body: #1a1a1a;
 $color-white: white;
 $color-black: black;
@@ -7,9 +8,14 @@ $background-color-section: #202020;
 $font-family-arial: Arial, Helvetica, sans-serif;
 $color-body-card: rgb(93, 92, 92);
 
+/*MIXINS*/
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 .logo-zaam {
-    width: 100px;
-    height: 25px;
+    @include sizes (100px, 25px);
 }
 
 .padding-texto {
@@ -58,9 +64,9 @@ header {
     justify-content: center;
 
     p {
-        color: $color-white;
         text-align: center;
         justify-content: center;
+        color: $color-white;
         font-family: $font-family-arial;
         padding: 10px 15px;
         border: 1.5px solid #2d2e36;
@@ -69,9 +75,9 @@ header {
     }
 
     h2 {
-        color: $color-white;
         text-align: center;
         justify-content: center;
+        color: $color-white;
         padding-top: 10px;
         font-family: $font-family-arial;
         font-weight: bold;
@@ -120,29 +126,21 @@ header {
 }
 
 .image1 {
-    width: 250px;
-    height: 280px;
+    @include sizes (250px, 280px);
     border-radius: 5px;
     border: 1px solid $color-white;
 }
 
 .image2 {
-    width: 250px;
-    height: 280px;
-    border-radius: 5px;
-    border: 1px solid $color-white;
+    @extend .image1;
 }
 
 .image3 {
-    width: 250px;
-    height: 280px;
-    border-radius: 5px;
-    border: 1px solid $color-white;
+    @extend .image1;
 }
 
 .image4 {
-    width: 760px;
-    height: 280px;
+    @include sizes (760px, 280px);
     border-radius: 5px;
     border: 1px solid $color-white;
 }
@@ -169,10 +167,9 @@ header {
     display: flex;
 
     img {
+        @include sizes (290px, 290px);
         margin: auto;
         display: flex;
-        width: 290px;
-        height: 290px;
         border: 1.5px solid $color-white;
         border-radius: 10px;
     }
@@ -216,8 +213,7 @@ header {
 
 /*CONTACTO*/
 .contenedor1 {
-    display: flex;
-    justify-content: center;
+    @extend .contenedor2;
     border-bottom: 2px solid #2d2e36;
     height: 50%;
 }
@@ -228,12 +224,11 @@ header {
 }
 
 .textos {
+    @include sizes(60%,100%);
     justify-content: space-between;
     text-align: center;
     font-family: $font-family-arial;
     margin: 50px;
-    width: 60%;
-    height: 100%;
 
     p {
         color: $color-white;
@@ -251,11 +246,10 @@ header {
 
 
 .formulario {
+    @include sizes(40%,100%);
     border: 2px solid $color-black;
     padding: 20px;
     margin: 50px;
-    width: 40%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -291,20 +285,18 @@ header {
 }
 
 .cliente img {
-    height: 300px;
-    width: 250px;
+    @include sizes(250px,300px);
     text-align: center;
     border-radius: 5px;
     margin: 15px;
 }
 
 .parrafos-clientes p {
+    @include sizes(auto,auto);
     color: $color-white;
     text-align: center;
     justify-content: center;
     font-size: large;
-    width: auto;
-    height: auto;
     padding: 30px;
     margin: auto;
     border:1px solid $color-white;
