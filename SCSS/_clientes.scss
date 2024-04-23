@@ -1,4 +1,7 @@
 /*CLIENTES*/
+@import "mixins";
+@import "variables-globales";
+
 .titulo-clientes h1 {
     color: $color-white;
     text-align: center;
