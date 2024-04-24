@@ -1,0 +1,20 @@
+/*MEDIAS QUERYS*/
+.card {
+    width: 18rem;
+}
+
+@media only screen (max-width: 768px){
+    .cartas {
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+    
+    .card {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+
+
+  

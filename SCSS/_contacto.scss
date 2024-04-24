@@ -1,6 +1,6 @@
 /*CONTACTO*/
 @import "mixins";
-@import "variables-globales";
+@import "variables";
 .contenedor1 {
     @extend .contenedor2;
     border-bottom: 2px solid #2d2e36;
